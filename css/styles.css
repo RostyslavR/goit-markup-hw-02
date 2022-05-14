@@ -17,7 +17,7 @@
     --footer-bg-color: #2F303A;
 }
 body{
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -99,9 +99,9 @@ a.current {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-
     color: var(--primary-color);
     background-color: var(--secondary-color);
+    cursor: pointer;
 }
 /* Section */
 .section-title{
@@ -109,7 +109,6 @@ a.current {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-
     color: var(--header-color);
 }
 
@@ -150,18 +149,15 @@ address .mail{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    text-align: center;
-
     color: var(--header-color);
     background-color: #F5F4FA;
+    cursor: pointer;
 }
-
 .projects> h3{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-
     color: var(--header-color);
 }
 .projects> p{
