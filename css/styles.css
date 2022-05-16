@@ -3,9 +3,6 @@
     --primary-color : #FFFFFF ;
     /* secondary color blue */
     --secondary-color: #2196F3;
-    /* accent color */
-    --accent-color: #1a8000;
-    
     /* header color black */
     --header-color : #212121 ;
     /* text color black */
@@ -56,7 +53,7 @@ address {
 }
 
 .nav-list a,
-.header-address a {
+.address-list a {
     font-weight: 500;
     letter-spacing: 0.02em;
 }
@@ -65,22 +62,24 @@ address {
     color: var(--header-color);
 }
     
-.header-address a{
+.address-list a{
     line-height: 1.14;
     color: inherit;
 }
 
-a.current {
+.nav-link:hover,
+.nav-link:focus,
+.address-link:hover,
+.address-link:focus,
+.button-item:hover,
+.button-item:focus {
     color: var(--secondary-color);
 }
 
-.focus:hover,
-.focus:focus {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-}
-
 /* Hero */
+.hero{
+    background-color: #2F303A;
+}
 .hero-title{
     font-weight: 900;
     font-size: 44px;
@@ -90,7 +89,6 @@ a.current {
     text-transform: uppercase;
 
     color: var(--primary-color);
-    background-color: #2F303A;
 }
 
 .hero-button{
@@ -112,9 +110,7 @@ a.current {
     color: var(--header-color);
 }
 
-.hidden{
-    color: var(--primary-color);
-}
+
 h3{
     color: var(--header-color);
 }
@@ -136,15 +132,16 @@ h3{
 
 /* Footer */
 .studio-footer,
-address .addr{
+address .addr-link{
     color: var(--primary-color);
 }
-address .mail{
+address .mail-link,
+address .tel-link{
     color: rgba(255, 255, 255, 0.6);
 }
 
 /* Портфолио */
-.button {
+.button-item {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -153,7 +150,7 @@ address .mail{
     background-color: #F5F4FA;
     cursor: pointer;
 }
-.projects> h3{
+.projects> h2{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
